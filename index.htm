@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>DevJobs Web App</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-bg">
+      <img src="assets/Group-10-background.svg" alt="background" class="header-bg-img">
+    </div>
+
+    <div class="header-content">
+      <div class="logo">
+        <img src="assets\devjobs.png" alt="logo">
+        <img src="assets/mtvaremze.png" alt="logo">
+      </div>
+
+      <form action="/search" method="get" class="search-form">
+        <input type="text" name="query" placeholder="Filter by title, companies, expertise..." class="search-input">
+
+        <div class="filters">
+          <input type="text" name="location" placeholder="Filter by location" class="filter-location">
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="fulltime" class="checkbox">
+            Full time only
+          </label>
+
+          <button type="submit" class="search-btn">Search</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+<main class="job-listings">
+  <!-- 1. Scoot -->
+  <section class="job-card">
+    <div class="job-logo logo-scoot">
+      <span class="logo1">scoot</span>
+    </div>
+    <div class="job-info">
+      <p class="job-meta">5h ago • Full Time</p>
+      <h2 class="job-title">Senior Software Engineer</h2>
+      <p class="company">Scoot</p>
+      <p class="location">United Kingdom</p>
+    </div>
+  </section>
+
+  <!-- 2. Blogr -->
+  <section class="job-card">
+    <div class="job-logo logo-blogr">
+      <span class="logo"> <img src="assets\b. 2.png" alt="logo"></span>
+    </div>
+    <div class="job-info">
+      <p class="job-meta">20h ago • Part Time</p>
+      <h2 class="job-title">Haskell and PureScript Dev</h2>
+      <p class="company">Blogr</p>
+      <p class="location">United States</p>
+    </div>
+  </section>
+
+  <!-- 3. Vector -->
+  <section class="job-card">
+    <div class="job-logo logo-vector">
+      <span class="logo"><img src=assets\VECTOR.png alt="logo"></span>
+    </div>
+    <div class="job-info">
+      <p class="job-meta">1d ago • Part Time</p>
+      <h2 class="job-title">Midlevel Back End Engineer</h2>
+      <p class="company">Vector</p>
+      <p class="location">Russia</p>
+    </div>
+  </section>
+
+  <!-- 4. Office Lite -->
+  <section class="job-card">
+    <div class="job-logo logo-office-lite">
+      <span class="venn-container"><img src="assets\Oval-Copy-18.svg" class="circle circle1" alt="Circle 1">
+<img src="assets\Oval-Copy-18.svg" class="circle circle2" alt="Circle 2">
+</span>
+    </div>
+    <div class="job-info">
+      <p class="job-meta">2d ago • Full Time</p>
+      <h2 class="job-title">Senior Application Engineer</h2>
+      <p class="company">Office Lite</p>
+      <p class="location">Japan</p>
+    </div>
+  </section>
+
+  <!-- 5. Pod -->
+  <section class="job-card">
+    <div class="job-logo logo-pod">
+      <span class="logo5"><img src="assets\Combined-Shape-2.png"></span>
+    </div>
+    <div class="job-info">
+      <p class="job-meta">2d ago • Part Time</p>
+      <h2 class="job-title">Remote DevOps Engineer</h2>
+      <p class="company">Pod</p>
+      <p class="location">Thailand</p>
+    </div>
+  </section>
+
+  <!-- 6. Creative -->
+  <section class="job-card">
+    <div class="job-logo logo-creative">
+      <span class="logo6"><img src="assets\Combined-Shape-bolo.svg" alt = "logo"></span>
+    </div>
+    <div class="job-info">
+      <p class="job-meta">4d ago • Part Time</p>
+      <h2 class="job-title">Desktop Support Manager</h2>
+      <p class="company">Creative</p>
+      <p class="location">Germany</p>
+    </div>
+  </section>
+</main>
+
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
