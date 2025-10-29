@@ -1,4 +1,3 @@
-/* ====== Global Reset & Base ====== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +16,6 @@ body {
   line-height: 1.5;
 }
 
-/* ====== Header Section ====== */
 .header {
   background-color: #5964e0;
   position: relative;
@@ -45,7 +43,6 @@ body {
   gap: 2rem;
 }
 
-/* ====== Logo ====== */
 .logo {
   display: flex;
   align-items: center;
@@ -59,7 +56,6 @@ body {
   color: white;
 }
 
-/* ====== Search Bar ====== */
 .search-form {
   display: flex;
   width: 100%;
@@ -70,14 +66,12 @@ body {
   overflow: hidden;
 }
 
-/* make each section take equal space */
 .search-input,
 .filter-location,
 .filters {
   flex: 1;
 }
 
-/* --- Left Section: Title/Company Input --- */
 .search-input {
   border: none;
   padding: 1.2rem 1.5rem;
@@ -87,7 +81,6 @@ body {
   color: #19202d;
 }
 
-/* --- Middle Section: Location Input --- */
 .filter-location {
   border: none;
   outline: none;
@@ -97,7 +90,6 @@ body {
   color: #7c8f8f;
 }
 
-/* --- Right Section: Checkbox + Button --- */
 .filters {
   display: flex;
   align-items: center;
@@ -137,18 +129,16 @@ body {
 }
 
 
-/* ====== Job Listings Layout ====== */
 .job-listings {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 2.5rem; /* spacing between cards */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2.5rem;
   padding: 4rem 6rem;
-  justify-items: center; /* centers cards horizontally */
+  justify-items: center; 
   align-items: start;
 }
 
 
-/* ====== Job Card with Floating Logo ====== */
 .job-card {
   background: white;
   padding: 2rem;
@@ -156,7 +146,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   position: relative;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: visible; /* allows logo to overlap */
+  overflow: visible; 
 }
 
 .job-card:hover {
@@ -164,7 +154,6 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
 }
 
-/* Floating logo (colored background) */
 .job-logo {
   position: absolute;
   top: -25px;
@@ -181,7 +170,6 @@ body {
   text-transform: lowercase;
 }
 
-/* optional text styling for logo text */
 .logo-text {
   color: white;
   font-weight: 700;
@@ -189,7 +177,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Job Info Content */
 .job-info {
   margin-top: 1.5rem;
 }
@@ -220,16 +207,15 @@ body {
 }
 
 .venn-container { 
-    position:relative ; width: 300px; /* adjust as needed */ height: 70px;
-     /* adjust as needed */ 
+    position:relative ; width: 300px; height: 70px;
       
 }
- .circle { position: absolute; width: 20px; /* size of your circle */ height: 20px; opacity: 0.6; /* makes overlap visible */
+ .circle { position: absolute; width: 20px;  height: 20px; opacity: 0.6; 
  }
   .circle1 { left: 10px; top: 25px; 
 
 } 
-  .circle2 { left: 20px; /* adjust for the amount of overlap */ top: 25px; }
+  .circle2 { left: 20px;  top: 25px; }
 
 
 .logo-text {
@@ -240,36 +226,30 @@ body {
 
 
 
-/* ====== Company Logo Background Colors ====== */
-.logo-scoot { background-color: #E99210; }       /* Orange */
-.logo-blogr { background-color: #E54D25; }       /* Red */
-.logo-vector { background-color: #34353F; }      /* Dark gray */
-.logo-office-lite { background-color: #2F4FC7; } /* Navy gray */
-.logo-pod { background-color: #132034; }         /* Light blue */
+.logo-scoot { background-color: #E99210; }   
+.logo-blogr { background-color: #E54D25; }      
+.logo-vector { background-color: #34353F; }      
+.logo-office-lite { background-color: #2F4FC7; } 
+.logo-pod { background-color: #132034; }         
 .logo-creative { background-color: #4E1853; } 
-.logo-mrgvali { background-color: #F94F4F; }    /* Teal */
-/* Indigo */
+.logo-mrgvali { background-color: #F94F4F; }    
 
-/* ====== Footer ====== */
 footer {
   height: 60px;
 }
 
-/* ====== Responsive Design ====== */
 @media (max-width: 1024px) {
   .container { width: 90%; }
   .job-listings { grid-template-columns: repeat(2, 1fr); gap: 2rem; padding: 3rem 2rem; }
-  .logo { gap: 29em; } /* smaller gap than desktop */
+  .logo { gap: 29em; } 
 }
 
-/* ====== Mobile ====== */
 @media (max-width: 768px) {
   .container {
     width: 100%;
     font-size: 14px;
   }
 
-  /* Keep search bar horizontal */
   .search-form {
     flex-direction: row;
     align-items: center;
@@ -280,7 +260,6 @@ footer {
 
 
 
-  /* Filters remain inline */
   .filters {
     flex-direction: row;
     align-items: center;
@@ -300,7 +279,6 @@ footer {
     flex-shrink: 0;
   }
 
-  /* Header spacing */
   .header-content {
     padding: 1rem 1.5rem;
     gap: 1rem;
@@ -313,11 +291,9 @@ footer {
     gap: 1rem;
   }
 
-  /* Job listings stack vertically */
   .job-listings {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1.5rem;
   }
 }
-
